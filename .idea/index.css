@@ -1,9 +1,8 @@
 * {margin:0; padding:0;}
 
-.wrap {width:1300px; margin-align:center; background-color: #000000
-}
+.wrap {width:1300px; margin-align:center;}
 
-header {text-align:center;}
+header {width:auto;height:100px;background-color:#000000;}
 
 section {}
 
