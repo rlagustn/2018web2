@@ -1,0 +1,23 @@
+* {margin:0; padding:0;}
+a {text-decoration:none; list-style:none;}
+#wrap {width:1000px; height:auto; margin:0 auto;}
+header img {margin-top:7px;}
+#menu_login {float:right;}
+#menu_login li {width:80px; height:30px; text-align:center; border:1px solid blue; position:relative; float:left; top:13px; list-style:none; line-height:30px;}
+#menu_dd {width:1000px;height:50px;}
+#menu_dd>ul {width:200px; height:50px; float:left; text-align:center; line-height:50px; background:white;}
+#menu_dd>ul>li {list-style: none;width:200px; height:50px; background:white;}
+#menu_dd a {color:black;}
+#menu_dd>ul>li>ul>li {height:0; overflow:hidden; background:skyblue;}
+#menu_dd>ul>li:hover>ul>li {height:50px; transition:0.8s;}
+#menu_dd>ul>li:hover>a {color:black;}
+#menu_dd>ul>li>ul>li:hover {background:white;}
+#menu_dd>ul>li:hover {background:skyblue;}
+#slide>ul>li {list-style:none;}
+#slide img {width:1000px; height:500px; z-index:-99; position:absolute;}
+#slide {width:1000px; height:500px;}
+#slide>li {width:1000px; height:500px; list-style:none; position:relative;}
+#ntc {width:690px; height:auto; line-height:25px; float: left;}
+table {width:690px; height:auto;}
+table th {float:left;}
+#ntc_right {width: 310px; height: auto; float:right;}
