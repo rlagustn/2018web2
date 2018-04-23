@@ -1,6 +1,9 @@
 * {margin:0; padding:0;}
 a {text-decoration:none; list-style:none;}
 #wrap {width:1000px; height:auto; margin:0 auto;}
+header {float: left;}
+content {float: left;}
+notice {float: left; width: 1000px; height: 400px;}
 header img {margin-top:7px;}
 
 #menu_login {float:right;}
@@ -23,5 +26,10 @@ header img {margin-top:7px;}
 #ntc {width:690px; height:auto; line-height:25px; float: left;}
 table {width:690px; height:auto;}
 table th {float:left;}
-#ntc_right {width: 310px; height: auto; float:right;}
-#ntc_lunch img {width:345px; height:auto;}
+#ntc_right {width: 310px; height: 400px; float:right;}
+#ntc_lunch {width: 690px; height: auto; float: left;}
+#ntc_lunch img {width:319px; height: auto; flaot: left;}
+
+footer {width: 1000px; height: 70px; background: deepskyblue; float: left;}
+footer img {width: 220px; height: auto; float:left;}
+.footer_text {float: left; width:780px; height:auto;}
