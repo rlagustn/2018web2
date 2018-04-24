@@ -1,15 +1,15 @@
 * {margin:0; padding:0;}
 a {text-decoration:none; list-style:none;}
 #wrap {width:1000px; height:auto; margin:0 auto;}
-header {float: left;}
-content {float: left;}
-notice {float: left; width: 1000px; height: 400px;}
+header {float:left;}
+content {float:left;}
+notice {float:left; width: 1000px; height: 400px;}
 header img {margin-top:7px;}
 
 #menu_login {float:right;}
 #menu_login li {width:80px; height:30px; text-align:center; border:1px solid blue; position:relative; float:left; top:13px; list-style:none; line-height:30px;}
 
-#menu_dd {width:1000px;height:50px;}
+#menu_dd {width:1000px;height:50px; position: relative; z-index: 20;}
 #menu_dd>ul {width:200px; height:50px; float:left; text-align:center; line-height:50px; background:white;}
 #menu_dd>ul>li {list-style: none;width:200px; height:50px; background:white;}
 #menu_dd a {color:black;}
@@ -18,18 +18,19 @@ header img {margin-top:7px;}
 #menu_dd>ul>li:hover>a {color:black;}
 #menu_dd>ul>li>ul>li:hover>a {color:white;}
 
-#slide>ul>li {list-style:none;}
-#slide img {width:1000px; height:500px; z-index:-99; position:absolute;}
-#slide {width:1000px; height:500px;}
-#slide>li {width:1000px; height:500px; list-style:none; position:relative;}
+#slide img {width:1000px; height:500px; position:absolute;float:left;left:-100%;}
+#slide {width:1000px; height:500px;position:relative;overflow:hidden;float:left;}
+#slide img:first-child{left:0; z-index:1}
 
 #ntc {width:690px; height:auto; line-height:25px; float: left;}
 table {width:690px; height:auto;}
 table th {float:left;}
-#ntc_right {width: 310px; height: 400px; float:right;}
-#ntc_lunch {width: 690px; height: auto; float: left;}
-#ntc_lunch img {width:319px; height: auto; flaot: left;}
+#ntc_right {width:310px; height: 400px; float:right;}
+#ntc_lunch {width:319px; height:auto; float:left;}
+#ntc_lunch img {width:319px; height:auto; float:left;}
+#ntc_calendar {width:371px; height:auto; float:right;}
+#ntc_calendar p {text-align:center; line-height:180px;}
 
-footer {width: 1000px; height: 70px; background: deepskyblue; float: left;}
+footer {width: 1000px; height: 70px; background:lightskyblue; float: left;}
 footer img {width: 220px; height: auto; float:left;}
 .footer_text {float: left; width:780px; height:auto;}
