@@ -1,15 +1,14 @@
-var num = 1;
+var img=$("#slide img");
+var max=img.length-1;
+var cnt=0;
 
-$(document).ready(function(){
-    setlnterval(slide_right,2000);
-})
-function slide_right(){
-    $("#slide li").eq(num).animate({left:-1100,opacity:0},0);
-    $("#slide li").eq(num-1).animate({left:1100,opacity:0},1000);
-    $("#slide li").eq(num).animate({left:0,opacity:1},1000);
-
-    num++;
-    if(num>=3){
-        num=0;
-    }
+function slide(){
+    $(img[cnt]).animate({"left":"100%"},function () {
+        $(this).css({"left":"-100%"});
+    })
+    cnt++
+    if(cnt > max) cnt=0;
+    $(img[cnt]).animate({"left":"0"});
 }
+
+setInterval(slide,2000)
