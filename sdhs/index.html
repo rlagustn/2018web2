@@ -5,7 +5,6 @@
     <title>SDHS</title>
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -78,11 +77,9 @@
     </header>
     <content>
         <div id="slide">
-            <ul>
-                <li><img src="./img/slide1.jpg" alt="slide"></li>
-                <li><img src="./img/slide2.jpg" alt="slide"></li>
-                <li><img src="./img/slide3.jpg" alt="slide"></li>
-            </ul>
+                <img src="./img/slide1.jpg" alt="slide">
+                <img src="./img/slide2.jpg" alt="slide">
+                <img src="./img/slide3.jpg" alt="slide">
         </div>
     </content>
     <notice>
@@ -121,8 +118,12 @@
             <h3>오늘의 급식</h3>
             <img src="./img/notice_lunch.jpg" alt="lunch">
         </div>
-
+        <div id="ntc_calendar">
+            <h3>이달의 일정</h3>
+            <p>일정이 존재하지 않습니다.</p>
+        </div>
     </notice>
+
     <footer>
         <img src="./img/footer.png" alt="footer">
         <div class="footer_text">
@@ -133,4 +134,5 @@
     </footer>
 </div>
 </body>
+<script src="./js/index.js"></script>
 </html>
