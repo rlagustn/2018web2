@@ -2,33 +2,39 @@
 a {text-decoration:none; list-style:none;}
 #wrap {width:1000px; height:auto; margin:0 auto;}
 header {float:left;}
-content {float:left;}
-notice {float:left; width: 1000px; height: 400px;}
+#content {float:left;}
+#notice {float:left; width: 1000px; height: 400px;}
+ /*헤더*/
 header img {margin-top:7px;}
-
 #menu_login {float:right;}
 #menu_login li {width:80px; height:30px; text-align:center; border:1px solid blue; position:relative; float:left; top:13px; list-style:none; line-height:30px;}
-
 #menu_dd {width:1000px;height:50px; position: relative; z-index: 20;}
 #menu_dd>ul {width:200px; height:50px; float:left; text-align:center; line-height:50px; background:white;}
 #menu_dd>ul>li {list-style: none;width:200px; height:50px; background:white;}
 #menu_dd a {color:black;}
 #menu_dd>ul>li>ul>li {height:0; overflow:hidden; background:skyblue;}
 #menu_dd>ul>li:hover>ul>li {height:50px; transition:0.8s;}
-#menu_dd>ul>li:hover>a {color:black;}
+#menu_dd>ul:hover>li {color:skyblue;}
+#menu_dd>ul>li:hover>a {color:skyblue;}
 #menu_dd>ul>li>ul>li:hover>a {color:white;}
-
+  /*콘텐츠*/
 #slide img {width:1000px; height:500px; position:absolute;float:left;left:-100%;}
 #slide {width:1000px; height:500px;position:relative;overflow:hidden;float:left;}
-#slide img:first-child{left:0; z-index:1}
-
+#slide img:first-child {left:0; z-index:1}
+#button {width:1000px; height:auto; text-align:center; position:absolute; z-index:30; bottom: 0px;}
+#button a {color:white;}
+   /*노티스*/
 #ntc {width:690px; height:auto; line-height:25px; float: left;}
 table {width:690px; height:auto;}
 table th {float:left;}
 #ntc_right {width:310px; height: 400px; float:right;}
-#ntc_lunch {width:319px; height:auto; float:left;}
-#ntc_lunch img {width:319px; height:auto; float:left;}
+#popup {width:319px; height:auto; float:left;}
+#popup img {width:314px; height:auto; float:left; position:relative;}
 #ntc_calendar {width:371px; height:auto; float:right;}
 #ntc_calendar p {text-align:center; line-height:180px;}
-
-footer {width:1000px; height:auto; background:royalblue; float:left; text-align:center; line-height:70px;}
+   /*푸터*/
+footer {width:1000px; height:auto; background:skyblue; float:left; text-align:center; line-height:25px;}
+footer p {color:white}
+   /*팝업*/
+.test{z-index:99; position:fixed; top:0; left:0; background:#000; opacity:.5;}
+.test1{height:221px; z-index:150; position:fixed; top:0; left:0; display:none; background:#ffffff;}
